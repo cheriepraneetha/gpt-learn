@@ -4,7 +4,7 @@ from fpdf import FPDF
 
 # Initialize the LLM with API Key
 
-GROQ_API_KEY = "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"
+groq.api_key = st.secrets["GROQ_API_KEY"]
 
 client = Groq(api_key=GROQ_API_KEY)
 
