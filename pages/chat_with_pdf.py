@@ -11,6 +11,8 @@ import os
 
 # ✅ Groq API Key (Replace with your actual key)
 groq.api_key = st.secrets["GROQ_API_KEY"] 
+# ✅ Configure LLM (Groq API)
+llm = ChatGroq(model_name="llama3-70b-8192", api_key=st.secrets["GROQ_API_KEY"])
 
 # ✅ Configure LLM (Groq API)
 llm = ChatGroq(model_name="llama3-70b-8192", api_key=GROQ_API_KEY)
