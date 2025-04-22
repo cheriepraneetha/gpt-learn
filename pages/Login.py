@@ -41,8 +41,7 @@ if "user_id" not in st.session_state:
     st.session_state.otp = None
 
 # Hardcoded SendGrid API Key (Replace with your actual API key)
-SENDGRID_API_KEY = "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"
-
+SENDGRID_API_KEY = st.secrets["SENDGRID_API_KEY"]
 # Send OTP Email using SendGrid
 def send_otp_email(recipient_email, otp):
     message = Mail(
