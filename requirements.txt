@@ -1,0 +1,19 @@
+streamlit>=1.30.0
+boto3==1.34.81                 # For AWS DynamoDB interaction
+python-dotenv==1.0.1           # For environment variable management (API keys, etc.)
+sendgrid==6.11.0               # For OTP email sending
+PyPDF2==3.0.1                  # For basic PDF parsing (if used)
+langchain==0.1.14              # For Wikipedia Search Wrapper (LangChain)
+requests==2.31.0               # For any HTTP requests (if needed)
+jinja2==3.1.3                  # Required by LangChain internally
+markdown-it-py==3.0.0          # Required for parsing some markdown content
+
+# Optional - for PDF chat with vector search
+faiss-cpu==1.7.4               # For local vector indexing (Chat with PDF)
+sentence-transformers==2.6.1   # For embeddings
+transformers==4.39.3
+torch==2.2.2
+pypdf==3.17.4
+pandas==2.2.1
+python-dateutil==2.9.0.post0
+bcrypt==4.0.0
